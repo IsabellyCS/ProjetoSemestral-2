@@ -10,10 +10,22 @@
     <link rel="stylesheet" href="styleSobre.css">
 </head>
 <body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+             <a href="../Index/index.html">Tela Inicial</a>
+             <a href="../Pesquisa/pesquisa.html">Pesquisa</a>
+             <a href="../novidades/novidades.html">Novidades</a>
+             <a href="../Sobre/Sobre.html">Sobre Nós</a>
+             <a href="../login/login.html">Login</a>
+             <a href="../contato/contato.html">Contato</a>
+        </div>
+    </div>
     <header>
-        <div id="top" class="menu">
-            <p>oi</p>
-        </div>    
+        <div class="menuzin" id="top">
+            <img src="../Index/img/logo.png" alt="" class="logo">
+            <buton class="menu" id="main"><img src="../Index/img/icon_menu.png" alt="" class="icon_menu"></button>
+        </div>   
     </header>
     <img src="imgsSobre/Life_is_Strange_Max.jpg" class="grupo" alt="">
     <div class="section1">
@@ -73,7 +85,30 @@
             </div>
         </div>
         <footer>
-            <p>oi</p>
+            <div class="junto">
+                <p class="junte">Junte-se a nós na missão de revelar o potencial dos criadores independentes!</p>
+                 <a href="" class="trabalhe">Trabalhe conosco</a>
+            </div>
+            <div class="coisos">
+                <div class="contate">
+                    <h3 class="title">Contate-nos</h3>
+                    <hr>
+                    <p class="contato">+55 11 99999-9999</p>
+                    <p class="contato">gamefiles@gmail.com</p>
+                </div>
+                <div class="redes">
+                    <h3 class="title">Redes Sociais</h3>
+                    <hr>
+                    <div class="icones">
+                        <img src="../Index/img/icon_insta.png" alt="" class="icon">
+                        <img src="../Index/img/icon_twitter.png" alt="" class="icon">
+                        <img src="../Index/img/icon_youtube.png" alt="" class="icon">
+                        <img src="../Index/img/icon_tiktok.png" alt="" class="icon">
+                    </div>
+                </div>
+            </div>
         </footer>
+
+        <script src="sobre.js"></script>
 </body>
 </html>
