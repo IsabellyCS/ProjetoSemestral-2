@@ -41,6 +41,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 900;
+    margin-top: -24px;
 }
 
 .logo {
@@ -57,7 +58,7 @@ header {
 }
 
 .icon_menu {
-    width: 100px;
+    width:100px;
 }
 
 .jogos {
