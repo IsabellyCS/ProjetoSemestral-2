@@ -1,4 +1,4 @@
-0<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -7,36 +7,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Overlay -->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-             <a href="../Index/index.html">Tela Inicial</a>
-             <a href="../Pesquisa/pesquisa.html">Pesquisa</a>
-             <a href="../novidades/novidades.html">Novidades</a>
-             <a href="../Sobre/Sobre.html">Sobre Nós</a>
-             <a href="../login/login.html">Login</a>
-             <a href="../contato/contato.html">Contato</a>
+            <a href="../Index/index.html" class="letrinhas">Tela Inicial</a>
+            <a href="../Pesquisa/pesquisa.html" class="letrinhas">Pesquisa</a>
+            <a href="../novidades/novidades.html" class="letrinhas">Novidades</a>
+            <a href="../Sobre/Sobre.html" class="letrinhas">Sobre Nós</a>
+            <a href="../login/login.html" class="letrinhas">Login</a>
+            <a href="../contato/contato.html" class="letrinhas">Contato</a>
         </div>
     </div>
+
+    <!-- Cabeçalho e Menu -->
     <header>
         <div class="menuzin" id="top">
             <img src="../Index/img/logo.png" alt="" class="logo">
-            <buton class="menu" id="main"><img src="../Index/img/icon_menu.png" alt="" class="icon_menu"></button>
+            <button class="menu" id="main">
+                <img src="../Index/img/icon_menu.png" alt="" class="icon_menu">
+            </button>
         </div>
     </header>
 
     <div class="jogos">
-        <div class="tabela" >
+        <div class="tabela clickable" data-url="../jogo/jogo.html" >
             <img src="img/game1_neva.png" alt="" class="games1">
             <p class="game1titulo">Neva</p>
             <p class="game1subtitulo">Indie, Aventura, Plataforma</p>
         </div>
-        <div class="tabela">
+        <div class="tabela clickable" data-url="../jogo/jogo.html">
             <img src="img/game1_EDM.png" alt="" class="games1">
             <p class="game1titulo">Enigma do Medo</p>
             <p class="game1subtitulo">Puzzle, Terror, Indie</p>
         </div>
-        <div class="tabela">
+        <div class="tabela clickable" data-url="../jogo/jogo.html">
             <img src="img/game1_omori.png" alt="" class="games1">
             <p class="game1titulo">OMORI</p>
             <p class="game1subtitulo">RPG, Aventura, Indie</p>
@@ -49,24 +54,24 @@
     </div>
 
     <div class="jogos2">
-        <div class="games2">
+        <div class="games2 clickable" data-url="../jogo/jogo.html">
              <img src="img/game2_lis.png" alt="" class="games2">
              <p class="game1titulo">Life Is Strange</p>
              <p class="game1subtitulo">Indie, Narrativa interativa</p>
         </div>
-        <div class="games2">
+        <div class="games2 clickable" data-url="../jogo/jogo.html">
             <img src="img/game2_undertale.png" alt="" class="games2">
             <p class="game1titulo">UNDERTALE</p>
             <p class="game1subtitulo">RPG, Ação, Aventura, Indie</p>
        </div>
     </div>
     <div class="jogos2">
-        <div class="games2">
+        <div class="games2 clickable" data-url="../jogo/jogo.html">
              <img src="img/game2_playtime.png" alt="" class="games2">
              <p class="game1titulo">Poppy Playtime</p>
              <p class="game1subtitulo">Indie, Puzzle, Terror</p>
         </div>
-        <div class="games2">
+        <div class="games2 clickable" data-url="../jogo/jogo.html">
             <img src="img/game2_sally.png" alt="" class="games2">
             <p class="game1titulo">Sally Face</p>
             <p class="game1subtitulo">Terror, Indie, Aventura, Ficção</p>
@@ -128,14 +133,14 @@
             </div>
         </div>
         <div class="categoria">
-            <img src="img/cat_simulação.png" alt="">
+            <img src="img/ficçãoImg.webp" class="teste" alt="">
             <div class="cat">
                 <p>FICÇÃO</p>
             </div>
         </div>
     </div>
 
-    <h1>Novidades</h1>
+    <a href="../novidades/novidades.html" class="nov">Novidades</a>
     <div class="novidades">
         <div class="novi">
             <img src="img/not_edm.png" alt="">

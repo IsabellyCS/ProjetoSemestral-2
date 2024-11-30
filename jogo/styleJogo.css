@@ -37,70 +37,67 @@
     font-size: 25px;
 }
 
-.overlay {  
+/* Estilos do Overlay */
+.overlay {
     position: fixed;
     z-index: 1000;
     height: 0;
     width: 100%;
-    position: fixed;
-    z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgb(102, 25, 110);
-    background-color: rgba(102, 25, 110, 0.8);
+    background-color: rgba(102, 25, 110, 0.8); /* Cor roxa com 80% de transparência */
     overflow-x: hidden;
     transition: 0.5s;
-  }
+}
 
-  .overlay-content {
+.overlay-content {
     position: absolute;
-    z-index: 1000;
-    position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-  }
-  
-  .overlay a {
-    z-index: 1000;
+}
+
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #f1bdf7;
     display: block;
     transition: 0.3s;
-  }
+}
 
-  .overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus {
     color: white;
-    z-index: 2000;
-  }
+}
 
-  .overlay .closebtn {
-    z-index: 1000;
+.overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.closebtn:hover {
+    filter: brightness(0.8);
   }
 
-  .closebtn {
-    position: fixed;
-    z-index: 1000;
-    transform: translateY(55px);
-  }
-
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
+/* Responsividade para telas menores */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
     }
-  }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
 
-  .menuzin {
+/* Estilos do Menu */
+.menuzin {
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -110,7 +107,7 @@
     margin-bottom: 30px;
     position: fixed;
     width: 100%;
-    z-index: 900;
+    z-index: 50;
 }
 
 .logo {
@@ -124,11 +121,20 @@
     background-color: transparent;
     margin-right: 50px;
     border: 0;
-    z-index: 2000;
+    z-index: 70;
 }
 
 .icon_menu {
     width: 100px;
+}
+
+/* Efeito de Hover nos Links */
+.letrinhas {
+    transition: text-decoration 0.3s ease;
+}
+
+.letrinhas:hover {
+    text-decoration: underline white;
 }
 
 header {
@@ -143,7 +149,6 @@ h1 {
 .poster {
     height: 550px;
     width: 100%;
-    margin-top: 100px;
 }
 .container1 {
     display: flex;
