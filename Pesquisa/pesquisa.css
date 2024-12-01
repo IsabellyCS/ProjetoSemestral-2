@@ -362,3 +362,32 @@ hr {
     flex-direction: row;
     height: 100px;
 }
+/* Estilos da div */
+#targetDiv {
+  opacity: 0; /* Começa invisível */
+  transform: translateY(50px); /* Um pequeno deslocamento para criar o efeito de deslizamento */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* A transição suave para opacidade e movimento */
+  display: flex; /* Assegura que a imagem dentro da div tenha espaço para ser exibida */
+  justify-content: center; /* Centraliza a imagem na div */
+  align-items: center; /* Centraliza a imagem na div */
+}
+
+/* Classe para tornar a div visível */
+#targetDiv.visible {
+  opacity: 1; /* Torna a div visível */
+  transform: translateY(0); /* Retorna à posição original */
+}
+
+/* Estilo para a imagem */
+.voltar img {
+  margin-right: 40px;
+  height: 90px;
+  width: 90px;
+  margin-bottom: 10px;
+  object-fit: contain; /* Garante que a imagem não fique distorcida */
+  visibility: visible; /* Garante que a imagem seja visível */
+}
+
+.voltar:hover img {
+  cursor: pointer;
+}
