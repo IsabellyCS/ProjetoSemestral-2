@@ -217,6 +217,7 @@ h1 {
 }
 
 .categorias {
+    cursor: pointer;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 25px;
@@ -255,6 +256,7 @@ h1 {
 .teste {
     height: 292px;
     width: 440px;
+    filter: brightness(0.5);
 }
 
 .not {

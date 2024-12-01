@@ -188,6 +188,7 @@ header {
     display: flex;
     padding: 50px 0;
     background-color: white;
+    height: 700px;
 }
 
 .integrante {
@@ -269,6 +270,37 @@ hr {
     width: 350px;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+.voltar {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: -20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+.voltar img{
+    margin-right: 40px;
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+}
+.voltar:hover img{
+    cursor: pointer;
+}
+.voltar
+/* Estilos da div */
+#targetDiv {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px); /* Um pequeno deslocamento para criar o efeito de deslizamento */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* A transição suave para opacidade e movimento */
+}
+
+/* Classe para tornar a div visível */
+#targetDiv.visible {
+    opacity: 1; /* Torna a div visível */
+    transform: translateY(0); /* Retorna à posição original */
 }
 
 .contato {

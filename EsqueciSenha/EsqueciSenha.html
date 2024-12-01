@@ -26,22 +26,22 @@ rel='stylesheet'>
 
 
     <main class="container">
-<form>
+<form id="meuForm">
         <h1>Login</h1>
     <div class="input-box">
-        <input placeholder="E-mail" type="email">
+        <input placeholder="E-mail" id="email" name="email" required type="email" min="5">
         <i class="bx bxs-user"></i>
     </div>
     <div class="input-box">
-        <input placeholder="Confirmar E-mail" type="email">
+        <input placeholder="Confirmar E-mail" name="confirmEmail" id="confirmEmail" required type="email" min="5">
         <i class="bx bxs-user"></i>
     </div>
     <div class="input-box">
-        <input placeholder="Senha" type="password">
+        <input placeholder="Senha" type="password" name="senha" id="senha" required min="3"> 
         <i class="bx bxs-lock-alt"></i>
     </div>
     <div class="input-box">
-        <input placeholder="Confirmar Senha" type="password">
+        <input placeholder="Confirmar Senha" id="confirmSenha" name="confirmSenha" type="password" required min="3">
         <i class="bx bxs-lock-alt"></i>
     </div>
 
@@ -51,11 +51,13 @@ rel='stylesheet'>
     </label>
     </div>
 
-    <button class="Login" type="submit"> <a href="/Apelido/index.html">Login</a></button>
+    <button class="Login" type="submit">Login</a></button>
 
     <div class="register-link">
     </div>
 </form>
+
+<script src="esqueciSenha.js"></script>
 
 
 
