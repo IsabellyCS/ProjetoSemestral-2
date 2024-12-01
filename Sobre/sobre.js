@@ -8,9 +8,8 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%"; // Esconder o overlay
 }
 
-  //div final
- // Função para verificar se o elemento está visível na tela
- function isElementInView(element) {
+// Função para verificar se o elemento está visível na tela
+function isElementInView(element) {
   const rect = element.getBoundingClientRect();
   return rect.top >= 0 && rect.left >= 0 && rect.bottom <= window.innerHeight && rect.right <= window.innerWidth;
 }
@@ -32,3 +31,11 @@ window.addEventListener('scroll', handleScroll);
 
 // Chama a função ao carregar a página para garantir que a div apareça se já estiver visível
 window.addEventListener('load', handleScroll);
+
+// Função para rolar até o topo
+function scrollToTop() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Rolagem suave
+  });
+}

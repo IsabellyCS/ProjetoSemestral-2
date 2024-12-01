@@ -101,7 +101,6 @@ h3 {
     }
 }
 
-/* Estilos do Menu */
 .menuzin {
     height: 100px;
     display: flex;
@@ -116,21 +115,29 @@ h3 {
 }
 
 .logo {
-    width: 125px;
+    width: 115px;
     margin-left: 30px;
 }
+.logo:hover {
+    cursor: pointer;
+}
+
 
 .menu {
     width: 100px;
     height: 70px;
     background-color: transparent;
-    margin-right: 50px;
+    margin-right: 40px;
+    margin-bottom: 10px;
     border: 0;
     z-index: 70;
 }
 
 .icon_menu {
-    width: 100px;
+    width: 80px;
+}
+.icon_menu:hover {
+    cursor: pointer;
 }
 
 /* Efeito de Hover nos Links */
@@ -276,8 +283,8 @@ hr {
     display: flex;
     justify-content: right;
     width: 100%;
-    margin-top: -20px;
-    padding-bottom: 20px;
+    margin-top: -260px;
+    padding-bottom: 15px;
     background-color: white;
 }
 .voltar img{

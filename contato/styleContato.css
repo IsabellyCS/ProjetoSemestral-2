@@ -94,7 +94,6 @@
     }
 }
 
-/* Estilos do Menu */
 .menuzin {
     height: 100px;
     display: flex;
@@ -109,21 +108,29 @@
 }
 
 .logo {
-    width: 125px;
+    width: 115px;
     margin-left: 30px;
 }
+.logo:hover {
+    cursor: pointer;
+}
+
 
 .menu {
     width: 100px;
     height: 70px;
     background-color: transparent;
-    margin-right: 50px;
+    margin-right: 40px;
+    margin-bottom: 10px;
     border: 0;
     z-index: 70;
 }
 
 .icon_menu {
-    width: 100px;
+    width: 80px;
+}
+.icon_menu:hover {
+    cursor: pointer;
 }
 
 /* Efeito de Hover nos Links */
@@ -275,6 +282,36 @@ hr {
     width: 350px;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+.voltar {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: -40px;
+    padding-bottom: 15px;
+    background-color: #ffffff;
+}
+.voltar img{
+    margin-right: 40px;
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+}
+.voltar:hover img{
+    cursor: pointer;
+}
+.voltar
+/* Estilos da div */
+#targetDiv {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px); /* Um pequeno deslocamento para criar o efeito de deslizamento */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* A transição suave para opacidade e movimento */
+}
+
+/* Classe para tornar a div visível */
+#targetDiv.visible {
+    opacity: 1; /* Torna a div visível */
+    transform: translateY(0); /* Retorna à posição original */
 }
 
 .contato {

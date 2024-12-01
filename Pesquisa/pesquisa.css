@@ -86,7 +86,6 @@
   }
 }
 
-/* Estilos do Menu */
 .menuzin {
   height: 100px;
   display: flex;
@@ -101,21 +100,29 @@
 }
 
 .logo {
-  width: 125px;
+  width: 115px;
   margin-left: 30px;
 }
+.logo:hover {
+  cursor: pointer;
+}
+
 
 .menu {
   width: 100px;
   height: 70px;
   background-color: transparent;
-  margin-right: 50px;
+  margin-right: 40px;
+  margin-bottom: 10px;
   border: 0;
   z-index: 70;
 }
 
 .icon_menu {
-  width: 100px;
+  width: 80px;
+}
+.icon_menu:hover {
+  cursor: pointer;
 }
 
 /* Efeito de Hover nos Links */
@@ -132,10 +139,13 @@ header {
 }
 
   .Jogos {
+    margin-left: 100px;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: start;
+    gap: 100px;
+
   }
 
   .filterDiv {
@@ -149,6 +159,25 @@ header {
     margin-bottom: 50px;
     display: none;
   }
+  .filterDiv.show {
+    display: block; /* Exibe as divs com a classe 'show' */
+  }
+  .hide {
+    display: none;
+  }
+  
+  .empty {
+    width: 600px;
+    height: 360px;
+    background-color: transparent;
+    display: none; /* Inicialmente escondida */
+    text-align: center;
+    font-size: 24px;
+    color: #555;
+  }
+  
+  
+  
 
   .tabela {
     display: flex;

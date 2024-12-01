@@ -40,8 +40,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Seleciona todas as divs que representam os jogos
     const jogos = document.querySelectorAll('.filterDiv');
+    let jogosExibidos = 0; // Contador para controlar o número de jogos exibidos
 
     jogos.forEach(function (jogo) {
+        // Se já foram exibidos 4 jogos, não exibe mais
+        if (jogosExibidos >= 4) {
+            jogo.style.display = 'none'; // Esconde o jogo se já houver 4 jogos exibidos
+            return;
+        }
+
         // Obtém as classes da div, exceto a classe 'filterDiv', e converte para minúsculas
         const generos = Array.from(jogo.classList)
             .filter(classe => classe !== 'filterDiv')
@@ -53,8 +60,24 @@ document.addEventListener('DOMContentLoaded', function () {
         // Exibe ou oculta o jogo com base no filtro
         if (jogoSelecionado) {
             jogo.style.display = 'block'; // Exibe o jogo
+            jogosExibidos++; // Incrementa o contador de jogos exibidos
         } else {
             jogo.style.display = 'none'; // Oculta o jogo
         }
     });
 });
+
+
+// Evento de rolagem
+window.addEventListener('scroll', handleScroll);
+
+// Chama a função ao carregar a página para garantir que a div apareça se já estiver visível
+window.addEventListener('load', handleScroll);
+
+// Função para rolar até o topo
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Rolagem suave
+    });
+}

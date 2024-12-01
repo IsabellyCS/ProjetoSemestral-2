@@ -52,3 +52,69 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+// Função de filtragem dos jogos
+function filterSelection(c) {
+  var x, i;
+  var emptyDiv = document.querySelector(".empty"); // Selecione a div empty
+  
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  
+  let visibleGamesCount = 0; // Contador de jogos visíveis
+
+  // Percorra todos os jogos e conte os que devem ser exibidos
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    
+    if (x[i].className.indexOf(c) > -1) {
+      w3AddClass(x[i], "show");
+      visibleGamesCount++; // Incrementa o contador
+    }
+  }
+  
+  // Exibe ou esconde a div empty baseado no número de jogos visíveis
+  if (visibleGamesCount % 2 === 1) {  // Se o número de jogos for ímpar
+    if (emptyDiv) emptyDiv.style.display = "block"; // Exibe a div empty
+  } else {
+    if (emptyDiv) emptyDiv.style.display = "none"; // Esconde a div empty
+  }
+}
+
+// Função para adicionar classes
+function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+}
+
+// Função para remover classes
+function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+}
+
+// Inicialização para exibir todos os jogos
+filterSelection("all");
+
+// Controle de filtros com botões
+var btnContainer = document.getElementById("Categorias");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
