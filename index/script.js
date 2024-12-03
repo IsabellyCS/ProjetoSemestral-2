@@ -109,3 +109,14 @@ function scrollToTop() {
         behavior: 'smooth' // Rolagem suave
     });
 }
+
+
+function redirectToPesquisa(element) {
+    // Pega o ID da div clicada
+    const categoriaId = element.id;
+  
+    // Redireciona para a página de pesquisa, passando o ID como parâmetro
+    window.location.href = "../Pesquisa/pesquisa.html?categoria=" + categoriaId;
+  }
+  
+  
